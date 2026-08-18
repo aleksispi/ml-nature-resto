@@ -12,6 +12,10 @@ The polygons and associated labels in this project were obtained from the SBA --
 ## Model weights
 Pretrained model weights (for both the best-performing CNN and CNN-LSTM models) can be downloaded [here](https://drive.google.com/drive/folders/1RpOVOphp9IcDONkIgssxORzfYim8O76l?usp=sharing).
 
+## Earlier projects and models
+* The work presented in this paper and repository is related also to [our previous work](https://arxiv.org/abs/2510.14493) on ML and satellite image time series for monitoring grazing activity. Code and models for this work is available [here](https://github.com/aleksispi/pib-ml-grazing).
+* Code, models and data for the cloud detection pipeline used in this work is available [here](https://github.com/aleksispi/ml-cloud-opt-thick). The paper describing the pipeline is available [here](https://www.mdpi.com/2072-4292/16/4/694). 
+
 ## Contents of this repository
 - File overview
   - explains existing files, which ones are more important as well as necessary details
