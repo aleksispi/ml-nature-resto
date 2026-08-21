@@ -7,7 +7,7 @@ Official code repository for the [CV4Ecology](https://cv4e-workshop.github.io/) 
 * Our work got presented at the [Swedish Climate Symposium 2026](https://swedishclimatesymposium.com/) in Lund!
 
 ## Data
-The polygons and associated labels in this project were obtained from the SBA -- please contact their GIS department (Gis.Support@jordbruksverket.se) if you want to ask for access to their polygons and labels, including the ones we used in this project. However, satellite data can be freely downloaded from the [_Digital Earth Sweden_](https://digitalearth.se/) platform using scripts provided within this code repository, where you could of course specify regions of interest with polygons of your own.
+The polygons and associated labels in this project were obtained from the SBA -- please contact their GIS department (`Gis.Support@jordbruksverket.se`) if you want to ask for access to their polygons and labels, including the ones we used in this project. However, satellite data can be freely downloaded from the [_Digital Earth Sweden_](https://digitalearth.se/) platform using scripts provided within this code repository (see `download_data.py` and `download_data_year_after.py` in `other_scripts`), where you can also specify regions of interest with polygons of your own.
 
 ## Model weights
 Pretrained model weights (for both the best-performing CNN and CNN-LSTM models) can be downloaded [here](https://drive.google.com/drive/folders/1RpOVOphp9IcDONkIgssxORzfYim8O76l?usp=sharing).
@@ -53,6 +53,7 @@ Brief overview of the main files. These uses are mentioned later in File descrip
   - `zarr_creation.py` (in folder `main_scripts`): Script for creating the Zarr cube from our format of gdf. Can be used as a blueprint of zarr creation or can be generalized with a few changes.
 
 ## Data preprocessing 
+Note: This section assumes access to Sentinel-2 satellite image timeseries (`.nc` files) and polygon GDFs (`.gpkg` files). As desribed under _Data_ above in the README, the satellite images can be downloaded using the scripts `download_data.py` and `download_data_year_after.py` in the folder `other_scripts`. As for the polygon data (pasture geographical specifications and labels), these were obtained by the Swedish Board of Agriculture (SBA). Please contact their GIS department (`Gis.Support@jordbruksverket.se`) if you want to ask for access to their polygons and labels, including the ones we used in this project.
 
 ### Overview
 ```
